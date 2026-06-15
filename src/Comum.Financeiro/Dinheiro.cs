@@ -60,6 +60,15 @@ public sealed record Dinheiro : IComparable<Dinheiro>
         return new Dinheiro(PoliticaArredondamento.Arredondar(valorComDesconto), Moeda);
     }
 
+    public Dinheiro AplicarAcrescimo(Percentual percentual)
+    {
+        ArgumentNullException.ThrowIfNull(percentual);
+        
+        var valorComAcrescimo = Valor * percentual.ComFatorDeAcrescimo();
+
+        return new Dinheiro(PoliticaArredondamento.Arredondar(valorComAcrescimo), Moeda);
+    }
+
     public bool EhZero()
     {
         return Valor == 0;
