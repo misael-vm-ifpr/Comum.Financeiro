@@ -1,2 +1,2 @@
-# Comum.Financeiro2
-Este tutorial que apresenta o passo a passo para iniciar o projeto Comum.Financeiro a partir de um repositório criado no GitHub e clonado para o computador local.
+# Comum.Financeiro
+Baseado em "[Comum.Financeiro2](https://github.com/prof-Jefferson/Comum.Financeiro2)".
